@@ -31,3 +31,4 @@ crashlytics-build.properties
 # Sistema
 .DS_Store
 Thumbs.db
+.plastic/
