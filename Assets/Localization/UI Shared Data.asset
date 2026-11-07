@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI
+  m_TableCollectionNameGuidString: b9466ca7750842e4396ab263ddfaa506
+  m_Entries:
+  - m_Id: 41073762304
+    m_Key: "Menu_Title\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 158552023040
+    m_Key: Menu_PlayerName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292845248512
+    m_Key: Menu_RoomName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372734156800
+    m_Key: Menu_Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 468158767104
+    m_Key: Btn_CreateRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 591009931264
+    m_Key: Btn_StartNewGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 624350453760
+    m_Key: Btn_LeaveSession
+    m_Metadata:
+      m_Items: []
+  - m_Id: 626955116544
+    m_Key: Room_Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 921139404800
+    m_Key: Question_Counter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027997687808
+    m_Key: Round_Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1136353337344
+    m_Key: Intro_Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355694465024
+    m_Key: NewRound_Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1363030302720
+    m_Key: Winner_Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1363999186944
+    m_Key: NoWinners_Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1366087950336
+    m_Key: Pregame_Ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1953462476800
+    m_Key: Pregame_Waiting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1955588988928
+    m_Key: Default_PlayerName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1956486569984
+    m_Key: Results_RoundScore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1957426094080
+    m_Key: Error_NameTaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2379918336000
+    m_Key: Error_RoomExists
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2382611079168
+    m_Key: Error_RoomNotFound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2383651266560
+    m_Key: "Error_RoomNameMissing\t"
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1155468152187912217
+  references:
+    version: 2
+    RefIds:
+    - rid: 1155468152187912217
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1794087304825

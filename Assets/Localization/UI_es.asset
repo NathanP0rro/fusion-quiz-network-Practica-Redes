@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: b9466ca7750842e4396ab263ddfaa506, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 41073762304
+    m_Localized: Quiz Network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 158552023040
+    m_Localized: Nombre de jugador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292845248512
+    m_Localized: Nombre de sala
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372734156800
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 468158767104
+    m_Localized: Crear sala
+    m_Metadata:
+      m_Items: []
+  - m_Id: 591009931264
+    m_Localized: Nueva partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 624350453760
+    m_Localized: Salir de la partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 626955116544
+    m_Localized: 'Sala: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 921139404800
+    m_Localized: 'Pregunta: {0} / {1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027997687808
+    m_Localized: 'Ronda: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1136353337344
+    m_Localized: 'Elige la respuesta correcta
+
+      La partida empieza enseguida'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355694465024
+    m_Localized: "\xA1La pr\xF3xima partida empieza enseguida!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1363030302720
+    m_Localized: "\xA1{0} gana!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1363999186944
+    m_Localized: Sin ganadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1366087950336
+    m_Localized: "La partida est\xE1 lista para empezar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1953462476800
+    m_Localized: "Esperando a que el anfitri\xF3n empiece la partida"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1955588988928
+    m_Localized: Jugador {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1956486569984
+    m_Localized: 'ronda: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1957426094080
+    m_Localized: "Ese nombre ya est\xE1 en uso en esta sala. Elige otro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2379918336000
+    m_Localized: Esa sala ya existe. Elige otro nombre o usa Unirse a sala.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2382611079168
+    m_Localized: Esa sala no existe. Comprueba el nombre o usa Crear sala.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2383651266560
+    m_Localized: Escribe el nombre de una sala.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

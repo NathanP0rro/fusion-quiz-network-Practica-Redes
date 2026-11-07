@@ -1,0 +1,1026 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Preguntas_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 181978149ee9c5a4e8f904a5c2e36850, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 126499151872
+    m_Localized: "\xBFCu\xE1l es la capital de Francia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706304
+    m_Localized: "Par\xEDs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706305
+    m_Localized: "Berl\xEDn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706306
+    m_Localized: Roma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706307
+    m_Localized: Madrid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706308
+    m_Localized: "\xBFEn qu\xE9 a\xF1o termin\xF3 la Segunda Guerra Mundial?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706309
+    m_Localized: 1945
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706310
+    m_Localized: 1943
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706311
+    m_Localized: 1947
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126532706312
+    m_Localized: 1950
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637696
+    m_Localized: "\xBFQui\xE9n escribi\xF3 la obra de teatro \xABRomeo y Julieta\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637697
+    m_Localized: William Shakespeare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637698
+    m_Localized: Charles Dickens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637699
+    m_Localized: Jane Austen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637700
+    m_Localized: Mark Twain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637701
+    m_Localized: "\xBFCu\xE1l es el planeta m\xE1s grande de nuestro sistema solar?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637702
+    m_Localized: "J\xFApiter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637703
+    m_Localized: Venus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637704
+    m_Localized: Marte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637705
+    m_Localized: Saturno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637706
+    m_Localized: "\xBFCu\xE1l es el s\xEDmbolo qu\xEDmico del oro?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637707
+    m_Localized: Au
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637708
+    m_Localized: Ag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637709
+    m_Localized: Fe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637710
+    m_Localized: Hg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637711
+    m_Localized: "\xBFQu\xE9 famoso cient\xEDfico desarroll\xF3 la teor\xEDa de la
+      relatividad?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637712
+    m_Localized: Albert Einstein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637713
+    m_Localized: Isaac Newton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637714
+    m_Localized: Galileo Galilei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637715
+    m_Localized: Stephen Hawking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637716
+    m_Localized: "\xBFEn qu\xE9 a\xF1o se hundi\xF3 el Titanic?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637717
+    m_Localized: 1912
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637718
+    m_Localized: 1910
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637719
+    m_Localized: 1915
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637720
+    m_Localized: 1920
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637721
+    m_Localized: "\xBFCu\xE1l es la capital de Jap\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637722
+    m_Localized: Tokio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637723
+    m_Localized: "Se\xFAl"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637724
+    m_Localized: "Pek\xEDn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637725
+    m_Localized: Bangkok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637726
+    m_Localized: "\xBFQui\xE9n pint\xF3 la Mona Lisa?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637727
+    m_Localized: Leonardo da Vinci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637728
+    m_Localized: Vincent van Gogh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637729
+    m_Localized: Pablo Picasso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637730
+    m_Localized: "Miguel \xC1ngel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637731
+    m_Localized: "\xBFCu\xE1l es el oc\xE9ano m\xE1s grande de la Tierra?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637732
+    m_Localized: "Oc\xE9ano Pac\xEDfico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637733
+    m_Localized: "Oc\xE9ano Atl\xE1ntico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637734
+    m_Localized: "Oc\xE9ano \xCDndico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637735
+    m_Localized: "Oc\xE9ano \xC1rtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637736
+    m_Localized: "\xBFQu\xE9 planeta es conocido como el \xABPlaneta Rojo\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637737
+    m_Localized: Marte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637738
+    m_Localized: Venus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637739
+    m_Localized: "J\xFApiter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637740
+    m_Localized: Saturno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637741
+    m_Localized: "\xBFQui\xE9n es el autor de la saga de Harry Potter?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637742
+    m_Localized: J.K. Rowling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637743
+    m_Localized: J.R.R. Tolkien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637744
+    m_Localized: George R.R. Martin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637745
+    m_Localized: Suzanne Collins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637746
+    m_Localized: "\xBFCu\xE1l es la capital de Australia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637747
+    m_Localized: Canberra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637748
+    m_Localized: "S\xEDdney"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637749
+    m_Localized: Melbourne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637750
+    m_Localized: Brisbane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637751
+    m_Localized: "\xBFQui\xE9n es el actual presidente de los Estados Unidos?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637752
+    m_Localized: Donald Trump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637753
+    m_Localized: Joe Biden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637754
+    m_Localized: Barack Obama
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637755
+    m_Localized: George W. Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637756
+    m_Localized: "\xBFQu\xE9 elemento tiene el s\xEDmbolo qu\xEDmico \xABO\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637757
+    m_Localized: "Ox\xEDgeno"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637758
+    m_Localized: Oro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637759
+    m_Localized: Hierro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637760
+    m_Localized: Plata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637761
+    m_Localized: "\xBFCu\xE1l es la moneda de China?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637762
+    m_Localized: Yuan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637763
+    m_Localized: Yen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637764
+    m_Localized: Won
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637765
+    m_Localized: Ringgit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637766
+    m_Localized: "\xBFQui\xE9n escribi\xF3 la obra de teatro \xABHamlet\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637767
+    m_Localized: William Shakespeare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637768
+    m_Localized: Jane Austen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637769
+    m_Localized: Charles Dickens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637770
+    m_Localized: F. Scott Fitzgerald
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637771
+    m_Localized: "\xBFEn qu\xE9 a\xF1o cay\xF3 el Muro de Berl\xEDn?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637772
+    m_Localized: 1989
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637773
+    m_Localized: 1985
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637774
+    m_Localized: 1991
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637775
+    m_Localized: 1995
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637776
+    m_Localized: "\xBFCu\xE1l es el mam\xEDfero m\xE1s grande del mundo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637777
+    m_Localized: Ballena azul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637778
+    m_Localized: Elefante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637779
+    m_Localized: Jirafa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637780
+    m_Localized: Gorila
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637781
+    m_Localized: "\xBFQui\xE9n es conocido como el \xABPadre de los ordenadores\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637782
+    m_Localized: Alan Turing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637783
+    m_Localized: Bill Gates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637784
+    m_Localized: Steve Jobs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637785
+    m_Localized: Charles Babbage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637786
+    m_Localized: "\xBFCu\xE1l es el idioma oficial de Brasil?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637787
+    m_Localized: "Portugu\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637788
+    m_Localized: "Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637789
+    m_Localized: "Franc\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637790
+    m_Localized: Italiano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637791
+    m_Localized: "\xBFQui\xE9n pint\xF3 La noche estrellada?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637792
+    m_Localized: Vincent van Gogh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637793
+    m_Localized: Claude Monet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637794
+    m_Localized: Pablo Picasso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637795
+    m_Localized: "Salvador Dal\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637796
+    m_Localized: "\xBFEn qu\xE9 pa\xEDs se encuentra la Gran Barrera de Coral?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637797
+    m_Localized: Australia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637798
+    m_Localized: Brasil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637799
+    m_Localized: "M\xE9xico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637800
+    m_Localized: India
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637801
+    m_Localized: "\xBFCu\xE1l es el n\xFAmero primo m\xE1s peque\xF1o?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637802
+    m_Localized: 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637803
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637804
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637805
+    m_Localized: 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637806
+    m_Localized: "\xBFQu\xE9 planeta es conocido como el \xABPlaneta Azul\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637807
+    m_Localized: Tierra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637808
+    m_Localized: Venus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637809
+    m_Localized: Marte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637810
+    m_Localized: "J\xFApiter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637811
+    m_Localized: "\xBFCu\xE1l es el s\xEDmbolo qu\xEDmico de la plata?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637812
+    m_Localized: Ag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637813
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637814
+    m_Localized: Au
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637815
+    m_Localized: Fe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637816
+    m_Localized: "\xBFQui\xE9n escribi\xF3 la obra de teatro \xABMacbeth\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637817
+    m_Localized: William Shakespeare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637818
+    m_Localized: Jane Austen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637819
+    m_Localized: Charles Dickens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637820
+    m_Localized: F. Scott Fitzgerald
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637821
+    m_Localized: "\xBFEn qu\xE9 a\xF1o declararon su independencia los Estados Unidos?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637822
+    m_Localized: 1776
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637823
+    m_Localized: 1774
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637824
+    m_Localized: 1783
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637825
+    m_Localized: 1800
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637826
+    m_Localized: "\xBFCu\xE1l es el desierto m\xE1s grande del mundo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637827
+    m_Localized: "Ant\xE1rtida"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637828
+    m_Localized: Desierto del Sahara
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637829
+    m_Localized: Desierto de Arabia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637830
+    m_Localized: Desierto de Gobi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637831
+    m_Localized: "\xBFQui\xE9n es el dios griego del mar?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637832
+    m_Localized: "Poseid\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637833
+    m_Localized: Zeus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637834
+    m_Localized: Apolo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637835
+    m_Localized: Hermes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637836
+    m_Localized: "\xBFCu\xE1l es la capital de Canad\xE1?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637837
+    m_Localized: Ottawa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637838
+    m_Localized: Toronto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637839
+    m_Localized: Vancouver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637840
+    m_Localized: Montreal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637841
+    m_Localized: "\xBFQui\xE9n escribi\xF3 la novela \xABMatar a un ruise\xF1or\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637842
+    m_Localized: Harper Lee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637843
+    m_Localized: J.R.R. Tolkien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637844
+    m_Localized: Jane Austen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637845
+    m_Localized: George Orwell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637846
+    m_Localized: "\xBFCu\xE1l es la ra\xEDz cuadrada de 64?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637847
+    m_Localized: 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637848
+    m_Localized: 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637849
+    m_Localized: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637850
+    m_Localized: 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637851
+    m_Localized: "\xBFQu\xE9 planeta es conocido como el \xABLucero del alba\xBB
+      o el \xABLucero de la tarde\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637852
+    m_Localized: Venus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637853
+    m_Localized: Marte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637854
+    m_Localized: "J\xFApiter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637855
+    m_Localized: Mercurio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637856
+    m_Localized: "\xBFCu\xE1l es la f\xF3rmula qu\xEDmica del agua?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637857
+    m_Localized: H2O
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637858
+    m_Localized: CO2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637859
+    m_Localized: O2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637860
+    m_Localized: N2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637861
+    m_Localized: "\xBFQui\xE9n pint\xF3 La \xDAltima Cena?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637862
+    m_Localized: Leonardo da Vinci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637863
+    m_Localized: "Miguel \xC1ngel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637864
+    m_Localized: Vincent van Gogh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637865
+    m_Localized: Pablo Picasso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637866
+    m_Localized: "\xBFEn qu\xE9 a\xF1o lleg\xF3 Crist\xF3bal Col\xF3n por primera
+      vez a Am\xE9rica?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637867
+    m_Localized: 1492
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637868
+    m_Localized: 1500
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637869
+    m_Localized: 1607
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637870
+    m_Localized: 1776
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637871
+    m_Localized: "\xBFCu\xE1l es el ave m\xE1s grande del mundo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637872
+    m_Localized: Avestruz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637873
+    m_Localized: "\xC1guila"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637874
+    m_Localized: "Ping\xFCino"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637875
+    m_Localized: "Halc\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637876
+    m_Localized: "\xBFQui\xE9n es el autor de \xABEl gran Gatsby\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637877
+    m_Localized: F. Scott Fitzgerald
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637878
+    m_Localized: Ernest Hemingway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051892637879
+    m_Localized: Jane Austen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026304
+    m_Localized: George Orwell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026305
+    m_Localized: "\xBFCu\xE1l es la velocidad de la luz?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026306
+    m_Localized: 300.000 km/s
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026307
+    m_Localized: 150.000 km/s
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026308
+    m_Localized: 500.000 km/s
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026309
+    m_Localized: 10.000 km/s
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026310
+    m_Localized: "\xBFQu\xE9 pa\xEDs es conocido como la Tierra del Sol Naciente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026311
+    m_Localized: "Jap\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026312
+    m_Localized: China
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026313
+    m_Localized: Corea del Sur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026314
+    m_Localized: Vietnam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026315
+    m_Localized: "\xBFCu\xE1l es la moneda del Reino Unido?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026316
+    m_Localized: Libra esterlina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026317
+    m_Localized: Euro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026318
+    m_Localized: "D\xF3lar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026319
+    m_Localized: Yen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026320
+    m_Localized: "\xBFQui\xE9n es el cantante principal de la banda Queen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026321
+    m_Localized: Freddie Mercury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026322
+    m_Localized: John Lennon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026323
+    m_Localized: Mick Jagger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026324
+    m_Localized: David Bowie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026325
+    m_Localized: "\xBFEn qu\xE9 a\xF1o tuvo lugar el primer alunizaje?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026326
+    m_Localized: 1969
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026327
+    m_Localized: 1961
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026328
+    m_Localized: 1975
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026329
+    m_Localized: 1983
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026330
+    m_Localized: "\xBFCu\xE1l es la isla m\xE1s grande del mundo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026331
+    m_Localized: Groenlandia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026332
+    m_Localized: Australia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026333
+    m_Localized: Borneo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026334
+    m_Localized: Madagascar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026335
+    m_Localized: "\xBFQui\xE9n pint\xF3 el techo de la Capilla Sixtina?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026336
+    m_Localized: "Miguel \xC1ngel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026337
+    m_Localized: Leonardo da Vinci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026338
+    m_Localized: Rafael
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026339
+    m_Localized: Donatello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026340
+    m_Localized: "\xBFCu\xE1l es la capital de Sud\xE1frica?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026341
+    m_Localized: Pretoria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026342
+    m_Localized: Nairobi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026343
+    m_Localized: Ciudad del Cabo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026344
+    m_Localized: Johannesburgo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026345
+    m_Localized: "\xBFQui\xE9n descubri\xF3 la penicilina?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026346
+    m_Localized: Alexander Fleming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026347
+    m_Localized: Marie Curie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026348
+    m_Localized: Louis Pasteur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026349
+    m_Localized: Joseph Lister
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026350
+    m_Localized: "\xBFCu\xE1l es la luna m\xE1s grande de J\xFApiter?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026351
+    m_Localized: "Gan\xEDmedes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026352
+    m_Localized: "\xCDo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026353
+    m_Localized: Europa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026354
+    m_Localized: Calisto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026355
+    m_Localized: "\xBFQui\xE9n escribi\xF3 la novela \xAB1984\xBB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026356
+    m_Localized: George Orwell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026357
+    m_Localized: Aldous Huxley
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026358
+    m_Localized: Ray Bradbury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1051901026359
+    m_Localized: H.G. Wells
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
