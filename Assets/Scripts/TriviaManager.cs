@@ -131,10 +131,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
     public override void Spawned()
     {
         LocalizationSettings.SelectedLocaleChanged += OnLocaleChangedRefreshQuestion;
-        if (QuestionsAsked == 0)
-            questionIndicatorText.text = "";
-        else
-            questionIndicatorText.text = "Question: " + QuestionsAsked + " / " + maxQuestions;
+        RefreshQuestionCounter();
 
         // Disallows players from joining once the game is started.
         if (Runner.IsSharedModeMasterClient)
@@ -221,7 +218,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
                 {
                     CurrentQuestion++;
                 }
-                
+
                 QuestionsAsked++;
 
                 timerLength = questionLength;
@@ -324,7 +321,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
             TriviaPlayer.LocalPlayer.Expression = TriviaPlayer.AvatarExpressions.Neutral;
 
-            triviaMessage.text = GameState == TriviaGameState.Intro ? "Select The Correct Answer\nStarting Game Soon" : "New Game Starting Soon!";
+            SetTriviaMessage(GameState == TriviaGameState.Intro ? "Intro_Message" : "NewRound_Message");
 
             endGameObject.Hide();
         }
@@ -346,7 +343,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
                 answerHighlights[i].color = Color.clear;
             }
 
-            triviaMessage.text = string.Empty;
+            ClearTriviaMessage();
 
             endGameObject.Hide();
         }
@@ -377,11 +374,11 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
         endGameObject.ShowAllResults(TriviaPlayer.TriviaPlayerRefs);
         if (winners.Count == 0)
         {
-            triviaMessage.text = "No winners";
+            SetTriviaMessage("NoWinners_Message");
         }
         else
         {
-            triviaMessage.text = winners[0].PlayerName.Value + " Wins!";
+            SetTriviaMessage("Winner_Message", winners[0].PlayerName.Value.ToString());
         }
 
         // Sets the player expression based on who won.
@@ -397,7 +394,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
     private void OnGameStateShowAnswer()
     {
-        triviaMessage.text = string.Empty;
+        ClearTriviaMessage();
 
         // If the player picks the correct answer, their score increases
         if (TriviaPlayer.LocalPlayer.ChosenAnswer == 0)
@@ -446,9 +443,38 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
         {
             ShowQuestionTexts(_shownQuestionIndex);
         }
-    }
-    private const string QuestionsTable = "Preguntas";
 
+        RefreshQuestionCounter();
+
+        if (!string.IsNullOrEmpty(_messageKey))
+        {
+            triviaMessage.text = UiText.Get(_messageKey, _messageArgs);
+        }
+    }
+
+    private const string QuestionsTable = "Preguntas";
+    private string _messageKey;
+    private object[] _messageArgs;
+
+    private void SetTriviaMessage(string key, params object[] args)
+    {
+        _messageKey = key;
+        _messageArgs = args;
+        triviaMessage.text = UiText.Get(key, args);
+    }
+
+    private void ClearTriviaMessage()
+    {
+        _messageKey = null;
+        triviaMessage.text = string.Empty;
+    }
+
+    private void RefreshQuestionCounter()
+    {
+        questionIndicatorText.text = QuestionsAsked == 0
+            ? string.Empty
+            : UiText.Get("Question_Counter", QuestionsAsked, maxQuestions);
+    }
     private void ShowQuestionTexts(int questionIndex)
     {
         _shownQuestionIndex = questionIndex;
@@ -477,7 +503,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
             }
 
             // Clears the trivia message
-            triviaMessage.text = string.Empty;
+            ClearTriviaMessage();
 
             // Deisgnate that the local player has not chosen an answer yet.
             TriviaPlayer.LocalPlayer.ChosenAnswer = -1;
@@ -498,10 +524,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
     private void UpdateQuestionsAskedText()
     {
-        if (QuestionsAsked == 0)
-            questionIndicatorText.text = "";
-        else
-            questionIndicatorText.text = "Question: " + QuestionsAsked + " / " + maxQuestions;
+        RefreshQuestionCounter();
     }
 
     public async void LeaveGame()

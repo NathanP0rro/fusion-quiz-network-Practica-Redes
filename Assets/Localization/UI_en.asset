@@ -125,6 +125,18 @@ MonoBehaviour:
     m_Localized: Start Game
     m_Metadata:
       m_Items: []
+  - m_Id: 198343153147904
+    m_Localized: 1st!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198480663404544
+    m_Localized: 2nd!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198565187018752
+    m_Localized: 3rd!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

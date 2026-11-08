@@ -119,6 +119,18 @@ MonoBehaviour:
     m_Key: Btn_StartGame
     m_Metadata:
       m_Items: []
+  - m_Id: 198343153147904
+    m_Key: 1st_Position
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198480663404544
+    m_Key: 2nd_Position
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198565187018752
+    m_Key: 3rd_Position
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

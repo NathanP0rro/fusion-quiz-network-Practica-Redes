@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 624350453760
-    m_Localized: Salir de la partida
+    m_Localized: 'Salir '
     m_Metadata:
       m_Items: []
   - m_Id: 626955116544
@@ -122,6 +122,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 188070572843008
     m_Localized: Empezar partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198343153147904
+    m_Localized: "\xA11\xBA!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198480663404544
+    m_Localized: "\xA12\xBA!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198565187018752
+    m_Localized: "\xA13\xBA!"
     m_Metadata:
       m_Items: []
   references:
