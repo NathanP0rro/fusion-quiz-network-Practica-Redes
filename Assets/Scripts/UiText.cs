@@ -8,4 +8,8 @@ public static class UiText
     {
         return LocalizationSettings.StringDatabase.GetLocalizedString(TableName, key, args);
     }
+    public static string GetFromTable(string table, string key)
+    {
+        return LocalizationSettings.StringDatabase.GetLocalizedString(table, key);
+    }
 }

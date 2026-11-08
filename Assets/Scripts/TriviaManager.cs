@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
 
 /// <summary>
 /// Singleton network behavoir that manages the game and is managed by the shared mode master client.
@@ -129,6 +130,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
     public override void Spawned()
     {
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChangedRefreshQuestion;
         if (QuestionsAsked == 0)
             questionIndicatorText.text = "";
         else
@@ -184,6 +186,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
     public override void Despawned(NetworkRunner runner, bool hasState)
     {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChangedRefreshQuestion;
         TriviaManagerPresent = false;
     }
 
@@ -435,6 +438,27 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
         answerHighlights[0].color = Color.green;
     }
 
+    private int _shownQuestionIndex = -1;
+
+    private void OnLocaleChangedRefreshQuestion(UnityEngine.Localization.Locale locale)
+    {
+        if (_shownQuestionIndex >= 0)
+        {
+            ShowQuestionTexts(_shownQuestionIndex);
+        }
+    }
+    private const string QuestionsTable = "Preguntas";
+
+    private void ShowQuestionTexts(int questionIndex)
+    {
+        _shownQuestionIndex = questionIndex;
+        string prefix = "Q" + (questionIndex + 1);
+        question.text = UiText.GetFromTable(QuestionsTable, prefix + "_Text");
+        answers[0].text = UiText.GetFromTable(QuestionsTable, prefix + "_Correct");
+        answers[1].text = UiText.GetFromTable(QuestionsTable, prefix + "_Decoy1");
+        answers[2].text = UiText.GetFromTable(QuestionsTable, prefix + "_Decoy2");
+        answers[3].text = UiText.GetFromTable(QuestionsTable, prefix + "_Decoy3");
+    }
     private void UpdateCurrentQuestion()
     {
         // If we are asking a question, we set the answers.
@@ -443,16 +467,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
             questionElements.SetActive(true);
 
             int questionIndex = randomizedQuestionList[CurrentQuestion];
-
-            question.text = triviaQuestions.Questions[questionIndex].question;
-
-            answers[0].text = triviaQuestions.Questions[questionIndex].correctAnswer;
-
-            answers[1].text = triviaQuestions.Questions[questionIndex].decoyAnswers[0];
-            answers[2].text = triviaQuestions.Questions[questionIndex].decoyAnswers[1];
-            answers[3].text = triviaQuestions.Questions[questionIndex].decoyAnswers[2];
-
-            // Scrambles the answers.  This can be different per player.
+            ShowQuestionTexts(questionIndex);
             List<int> answerIndices = new List<int>() { 0, 1, 2, 3 };
             while (answerIndices.Count > 0)
             {
