@@ -1,4 +1,5 @@
 using Fusion;
+using RoomLogic;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -30,6 +31,10 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
     [Tooltip("The number of questions asked asked so far.")]
     [Networked, OnChangedRender(nameof(UpdateQuestionsAskedText))]
     public int QuestionsAsked { get; set; } = 0;
+
+    [Tooltip("The current round number. Goes up each time a new game starts.")]
+    [Networked, OnChangedRender(nameof(UpdateRoundText))]
+    public int Round { get; set; } = 1;
 
     [Tooltip("The current state of the game.")]
     [Networked, OnChangedRender(nameof(OnTriviaGameStateChanged))]
@@ -65,6 +70,9 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
     /// Displays which questions out of 10 we are on.
     /// </summary>
     public TextMeshProUGUI questionIndicatorText;
+
+    [Tooltip("Text that shows the current round number.")]
+    public TextMeshProUGUI roundText;
 
     /// <summary>
     /// Text message shown when the game changes state.
@@ -132,6 +140,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
     {
         LocalizationSettings.SelectedLocaleChanged += OnLocaleChangedRefreshQuestion;
         RefreshQuestionCounter();
+        UpdateRoundText();
 
         // Disallows players from joining once the game is started.
         if (Runner.IsSharedModeMasterClient)
@@ -316,6 +325,13 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
         // If showin an answer, we show which players got the question correct and increase their score.
         if (GameState == TriviaGameState.Intro || GameState == TriviaGameState.NewRound)
         {
+            // At the start of a new round, the points of the last round are added to the total.
+            if (GameState == TriviaGameState.NewRound)
+            {
+                TriviaPlayer.LocalPlayer.TotalScore = RoundLogic.AddToTotal(
+                    TriviaPlayer.LocalPlayer.TotalScore, TriviaPlayer.LocalPlayer.Score);
+            }
+
             // Resets the score for the player
             TriviaPlayer.LocalPlayer.Score = 0;
 
@@ -445,6 +461,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
         }
 
         RefreshQuestionCounter();
+        UpdateRoundText();
 
         if (!string.IsNullOrEmpty(_messageKey))
         {
@@ -467,6 +484,14 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
     {
         _messageKey = null;
         triviaMessage.text = string.Empty;
+    }
+
+    private void UpdateRoundText()
+    {
+        if (roundText != null)
+        {
+            roundText.text = UiText.Get("Round_Label", System.Math.Max(1, Round));
+        }
     }
 
     private void RefreshQuestionCounter()
@@ -546,6 +571,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
         GameState = TriviaGameState.NewRound;
 
+        Round = RoundLogic.NextRound(Round);
         QuestionsAsked = 0;
 
         // Sets an initial intro timer

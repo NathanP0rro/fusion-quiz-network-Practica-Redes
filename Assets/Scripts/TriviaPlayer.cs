@@ -36,6 +36,7 @@ public class TriviaPlayer : NetworkBehaviour
     [Tooltip("What is the player's score.")]
     [Networked, OnChangedRender(nameof(OnScoreChanged))]
     public int Score { get; set; }
+    public int TotalScore { get; set; }
 
     [Tooltip("What is the player's score.")]
     [Networked, OnChangedRender(nameof(OnScorePopupChanged))]
