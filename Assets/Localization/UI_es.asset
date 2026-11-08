@@ -108,6 +108,18 @@ MonoBehaviour:
     m_Localized: Escribe el nombre de una sala.
     m_Metadata:
       m_Items: []
+  - m_Id: 6096080068608
+    m_Localized: Escriba un nombre.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6860638773248
+    m_Localized: Escriba una sala.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7277972021248
+    m_Localized: Unirse a sala
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

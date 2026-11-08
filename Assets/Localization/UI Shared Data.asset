@@ -103,6 +103,18 @@ MonoBehaviour:
     m_Key: "Error_RoomNameMissing\t"
     m_Metadata:
       m_Items: []
+  - m_Id: 6096080068608
+    m_Key: Menu_PlayerNameSelection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6860638773248
+    m_Key: Menu_RoomNameSelection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7277972021248
+    m_Key: Btn_JoinRoom
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

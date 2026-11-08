@@ -109,6 +109,18 @@ MonoBehaviour:
     m_Localized: Please write a room name.
     m_Metadata:
       m_Items: []
+  - m_Id: 6096080068608
+    m_Localized: Enter player name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6860638773248
+    m_Localized: Enter room name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7277972021248
+    m_Localized: Join room
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
