@@ -100,7 +100,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2383651266560
-    m_Key: "Error_RoomNameMissing\t"
+    m_Key: Error_RoomNameMissing
     m_Metadata:
       m_Items: []
   - m_Id: 6096080068608
@@ -113,6 +113,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 7277972021248
     m_Key: Btn_JoinRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188070572843008
+    m_Key: Btn_StartGame
     m_Metadata:
       m_Items: []
   m_Metadata:

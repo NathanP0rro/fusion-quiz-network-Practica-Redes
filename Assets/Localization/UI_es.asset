@@ -105,7 +105,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2383651266560
-    m_Localized: Escribe el nombre de una sala.
+    m_Localized: Escriba el nombre de una sala.
     m_Metadata:
       m_Items: []
   - m_Id: 6096080068608
@@ -118,6 +118,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 7277972021248
     m_Localized: Unirse a sala
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188070572843008
+    m_Localized: Emmpezar partida
     m_Metadata:
       m_Items: []
   references:

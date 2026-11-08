@@ -32,7 +32,7 @@ public class PlayerSpawner : SimulationBehaviour, IPlayerJoined, IPlayerLeft
 
         string playerName = connector != null ? connector.LocalPlayerName : null;
         if (string.IsNullOrEmpty(playerName))
-            playerName = "Player " + Runner.LocalPlayer.PlayerId;
+            playerName = UiText.Get("Default_PlayerName", Runner.LocalPlayer.PlayerId);
 
         // Waits until the players already in the room have appeared in this client (or until the timeout).
         float elapsed = 0f;
@@ -55,7 +55,7 @@ public class PlayerSpawner : SimulationBehaviour, IPlayerJoined, IPlayerLeft
         if (PlayerNameLogic.IsNameTaken(playerName, existingNames))
         {
             if (connector != null)
-                connector.LeaveWithError(Runner, "That name is already in use in this room. Please choose another one.");
+                connector.LeaveWithError(Runner, UiText.Get("Error_NameTaken"));
             yield break;
         }
 

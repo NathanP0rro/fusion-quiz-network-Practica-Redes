@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 public class FusionConnector : MonoBehaviour
 {
@@ -44,6 +45,9 @@ public class FusionConnector : MonoBehaviour
 
     public static FusionConnector Instance { get; private set; }
 
+    private string _currentRoomName = string.Empty;
+    private string _pregameKey;
+
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -54,11 +58,36 @@ public class FusionConnector : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
     }
 
     private void OnDestroy()
     {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
         Instance = null;
+    }
+
+    private void OnLocaleChanged(UnityEngine.Localization.Locale locale)
+    {
+        RefreshRoomName();
+        if (!string.IsNullOrEmpty(_pregameKey))
+        {
+            preGameMessage.text = UiText.Get(_pregameKey);
+        }
+    }
+
+    private void SetRoomName(string name)
+    {
+        _currentRoomName = name;
+        RefreshRoomName();
+    }
+
+    private void RefreshRoomName()
+    {
+        roomName.text = string.IsNullOrEmpty(_currentRoomName)
+            ? string.Empty
+            : UiText.Get("Room_Label", _currentRoomName);
     }
 
     public async void StartGame(bool createRoom)
@@ -70,7 +99,7 @@ public class FusionConnector : MonoBehaviour
         // Crear y Unirse necesitan siempre un nombre de sala.
         if (RoomRequestLogic.ValidateName(normalizedRoomName) != RoomRequestResult.Ok)
         {
-            ShowMenuError("Please write a room name.");
+            ShowMenuError(UiText.Get("Error_RoomNameMissing"));
             canvasGroup.interactable = true;
             return;
         }
@@ -88,7 +117,7 @@ public class FusionConnector : MonoBehaviour
 
         if (result.Ok)
         {
-            // En modo Shared, quien crea la sala es su master client.
+ 
             bool roomAlreadyExisted = RoomRequestLogic.DidRoomAlreadyExist(
                 newRunner.IsSharedModeMasterClient, newRunner.ActivePlayers.Count());
 
@@ -96,24 +125,24 @@ public class FusionConnector : MonoBehaviour
 
             if (outcome == RoomRequestResult.Ok)
             {
-                roomName.text = "Room:  " + newRunner.SessionInfo.Name;
+                SetRoomName(newRunner.SessionInfo.Name);
                 GoToGame();
             }
             else
             {
                 await newRunner.Shutdown(true, ShutdownReason.Ok);
 
-                roomName.text = string.Empty;
+                SetRoomName(string.Empty);
                 GoToMainMenu();
 
-                ShowMenuError(outcome == RoomRequestResult.RoomAlreadyExists
-                    ? "That room already exists. Choose another name or use Join Room."
-                    : "That room does not exist. Check the name or use Create Room.");
+                ShowMenuError(UiText.Get(outcome == RoomRequestResult.RoomAlreadyExists
+                    ? "Error_RoomExists"
+                    : "Error_RoomNotFound"));
             }
         }
         else
         {
-            roomName.text = string.Empty;
+            SetRoomName(string.Empty);
             GoToMainMenu();
             ShowMenuError(result.ErrorMessage);
             Debug.LogError(result.ErrorMessage);
@@ -140,7 +169,7 @@ public class FusionConnector : MonoBehaviour
     {
         await runner.Shutdown(true, ShutdownReason.Ok);
 
-        roomName.text = string.Empty;
+        SetRoomName(string.Empty);
         GoToMainMenu();
 
         errorMessageObject.SetActive(true);
@@ -164,20 +193,18 @@ public class FusionConnector : MonoBehaviour
             return;
         }
 
-        if (runner.IsSharedModeMasterClient == true)
-        {
-            SetPregameMessage("Game Is Ready To Start");
-        }
-        else
-        {
-            SetPregameMessage("Waiting for master client to start game.");
-        }
+        SetPregameKey(runner.IsSharedModeMasterClient ? "Pregame_Ready" : "Pregame_Waiting");
+    }
+    public void SetPregameKey(string key)
+    {
+        _pregameKey = key;
+        preGameMessage.text = UiText.Get(key);
     }
     public void SetPregameMessage(string message)
     {
+        _pregameKey = null;
         preGameMessage.text = message;
     }
-
     public void StartTriviaGame()
     {
         NetworkRunner runner = null;
